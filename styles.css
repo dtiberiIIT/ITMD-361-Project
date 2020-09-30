@@ -4,30 +4,34 @@ body {
 
     background-color: rgb(241, 241, 241);
 }
+
+article{
+    margin-top: 1em;
+    border: 2px solid rgb(143, 255, 213);
+    border-radius: 8px;
+    width: 50%;
+
+    font-family: Arial Narrow;
+}
+
 #header{
     /*background-color: rgb(66, 245, 194);*/
     background-color: rgb(143, 255, 213);
     color: rgb(84, 92, 89);
-
     padding: 1em;
-
     font-size: 100%;
-
     font-family: Arial Narrow;
 }
 
 nav a{
     background-color: rgb(180, 180, 180);
-
     color: white;
-    
+
     padding-right: 1em;
     padding-left: 1em;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
-
     border-radius: 4px;
-
     margin-right: 1em;
 }
 
@@ -37,30 +41,34 @@ nav a{
     font-family: Arial Narrow;
 
     padding-bottom: -1em;
-
     margin: 1em;
-
     border-bottom: 1px solid rgb(84, 92, 89);
-    
     width: 50%;
 }
 
 #article p{
-    font-family: Arial Narrow;
     font-size: 100%;
     text-indent: 1em;
-
-    width: 50%;
 
     margin: 1em;
 }
 
 #article h2{
     font-size: 150%;
-    font-family: Arial Narrow;
+
+    margin: 1em;
+}
+
+#article h3{
+    font-size: 125%;
+
     margin: 1em;
 }
 
 #article img{
-    width: 50%;
+    width:75%;
+}
+
+#resume{
+    padding: 1em;
 }
