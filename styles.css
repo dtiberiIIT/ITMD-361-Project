@@ -9,7 +9,7 @@ article{
     margin-top: 1em;
     border: 2px solid rgb(143, 255, 213);
     border-radius: 8px;
-    width: 50%;
+    width: 75%;
 
     font-family: Arial Narrow;
 }
@@ -43,7 +43,7 @@ nav a{
     padding-bottom: -1em;
     margin: 1em;
     border-bottom: 1px solid rgb(84, 92, 89);
-    width: 50%;
+    width: 75%;
 }
 
 #article p{
@@ -66,7 +66,7 @@ nav a{
 }
 
 #article img{
-    width:75%;
+    width:50%;
 }
 
 #resume{
