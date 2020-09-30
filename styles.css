@@ -1,0 +1,56 @@
+body {
+    margin: 1em;
+    padding: 1em;
+
+    background-color: rgb(241, 241, 241);
+}
+#header{
+    /*background-color: rgb(66, 245, 194);*/
+    background-color: rgb(143, 255, 213);
+    color: rgb(84, 92, 89);
+
+    padding: 1em;
+
+    font-size: 100%;
+
+    font-family: Arial Narrow;
+}
+
+nav a{
+    background-color: rgb(180, 180, 180);
+
+    color: white;
+    
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+
+    margin-right: 1em;
+}
+
+#quote {
+    font-style: italic;
+    font-size: 125%;
+    font-family: Arial Narrow;
+
+    padding-bottom: -1em;
+
+    margin: 1em;
+}
+
+#article p{
+    font-family: Arial Narrow;
+    font-size: 100%;
+    text-indent: 1em;
+
+    width: 50%;
+
+    margin: 1em;
+}
+
+#article h2{
+    font-size: 150%;
+    font-family: Arial Narrow;
+    margin: 1em;
+}
