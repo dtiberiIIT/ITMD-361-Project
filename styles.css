@@ -26,6 +26,8 @@ nav a{
     padding-top: 0.1em;
     padding-bottom: 0.1em;
 
+    border-radius: 4px;
+
     margin-right: 1em;
 }
 
@@ -37,6 +39,10 @@ nav a{
     padding-bottom: -1em;
 
     margin: 1em;
+
+    border-bottom: 1px solid rgb(84, 92, 89);
+    
+    width: 50%;
 }
 
 #article p{
@@ -53,4 +59,8 @@ nav a{
     font-size: 150%;
     font-family: Arial Narrow;
     margin: 1em;
+}
+
+#article img{
+    width: 50%;
 }
