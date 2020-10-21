@@ -10,13 +10,34 @@ body {
     background-color: rgb(241, 241, 241);
 }
 
-#article{
-    margin-top: 1em;
-    border: 2px solid rgb(140, 194, 227);
-    border-radius: 8px;
-    width: 75%;
+@media only screen and (min-width: 0px) {
+    #article{
+        margin-top: 1em;
+        border: 2px solid rgb(140, 194, 227);
+        border-radius: 8px;
+        width: auto;
 
-    font-family: Arial Narrow;
+        font-family: Arial Narrow;
+    }
+
+    #article img{
+        width:100%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    #article{
+        margin-top: 1em;
+        border: 2px solid rgb(140, 194, 227);
+        border-radius: 8px;
+        width: 75%;
+
+        font-family: Arial Narrow;
+    }
+
+    #article img{
+        width:50%;
+    }
 }
    
 #header{
@@ -24,6 +45,7 @@ body {
     background-color:rgb(186, 218, 238);
     color: rgb(84, 92, 89);
     padding: 1em;
+    
     font-size: 100%;
     font-family: Arial Narrow;
 }
@@ -76,10 +98,6 @@ nav a{
     margin: 1em;
 }
 
-#article img{
-    width:50%;
-}
-
 #article-cards{
     margin-top: 1em;
     border: 2px solid rgb(140, 194, 227);
@@ -91,15 +109,20 @@ nav a{
 .cards {
     display: flex;
     flex-wrap: wrap;
-    list-style-type: none
+    list-style-type: none;
+    margin-left: -1.5em;
 }
 .cards li {
-    background-color: rgb(186, 218, 238);
     flex: 1 1 10em;
     padding: 0.5em;
     margin-right: 1em;
     margin-bottom: 1em;
-    border: 2px solid rgb(98, 135, 158);
     border-radius: 8px;
-    
+
+    border: 2px solid rgb(98, 135, 158);
+    background-color: rgb(208, 208, 232);
+}
+
+.cards li h2{
+    color: rgb(98, 135, 158);
 }
