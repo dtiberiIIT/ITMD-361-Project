@@ -32,7 +32,7 @@ body {
         border-radius: 8px;
         width: 75%;
 
-        font-family: Arial Narrow;
+        font-family: Arial Narrow, Arial;
     }
 
     #article img{
@@ -47,7 +47,7 @@ body {
     padding: 1em;
     
     font-size: 100%;
-    font-family: Arial Narrow;
+    font-family: Arial Narrow, Arial;
 }
 
 nav{
@@ -72,7 +72,7 @@ nav a{
 #quote {
     font-style: italic;
     font-size: 125%;
-    font-family: Arial Narrow;
+    font-family: Arial Narrow, Arial;
     color:rgb(98, 135, 158);
     padding-bottom: -1em;
     border-bottom: 1px solid rgb(98, 135, 158);
