@@ -2,31 +2,32 @@ body {
   margin: 1em;
   padding: 1em;
   background-color: rgb(241, 241, 241);
-}   
+}
 
-@media only screen and (min-width: 0px) {
-  html{
+@media only screen and (min-width: 1px) {
+  html {
     font-size: 16px;
     line-height: 2em;
   }
 
-  #article{
+  #article {
     margin-top: 1em;
     border: 2px solid rgb(140, 194, 227);
     border-radius: 8px;
     width: auto;
 
-    font-family: Arial Narrow, Arial;
+    font-family: "Arial Narrow", Arial, sans-serif;
   }
-  #article img{
-    width:100%;
+
+  #article img {
+    width: 100%;
   }
 
   #quote {
     font-style: italic;
     font-size: 125%;
-    font-family: Arial Narrow, Arial;
-    color:rgb(98, 135, 158);
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: rgb(98, 135, 158);
     padding-bottom: -1em;
     border-bottom: 1px solid rgb(98, 135, 158);
     width: auto;
@@ -44,29 +45,29 @@ body {
 }
 
 @media only screen and (min-width: 480px) {
-  html{
+  html {
     font-size: 18px;
     line-height: 1.5em;
   }
 
-  #article{
+  #article {
     margin-top: 1em;
     border: 2px solid rgb(140, 194, 227);
     border-radius: 8px;
     width: 75%;
 
-    font-family: Arial Narrow, Arial;
+    font-family: "Arial Narrow", Arial, sans-serif;
   }
 
-  #article img{
-    width:50%;
+  #article img {
+    width: 50%;
   }
 
   #quote {
     font-style: italic;
     font-size: 125%;
-    font-family: Arial Narrow, Arial;
-    color:rgb(98, 135, 158);
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: rgb(98, 135, 158);
     padding-bottom: -1em;
     border-bottom: 1px solid rgb(98, 135, 158);
     width: 75%;
@@ -79,25 +80,24 @@ body {
     margin-left: -1.5em;
   }
 }
-   
-#header{
+
+#header {
   /*background-color: rgb(66, 245, 194);*/
-  background-color:rgb(186, 218, 238);
+  background-color: rgb(186, 218, 238);
   color: rgb(84, 92, 89);
   padding: 1em;
-  
   font-size: 100%;
   line-height: 250%;
-  font-family: Arial Narrow, Arial;
+  font-family: "Arial Narrow", Arial, sans-serif;
 }
 
-nav{
+nav {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none
+  list-style-type: none;
 }
 
-nav a{
+nav a {
   flex: 1 1 200px;
   background-color: rgb(98, 135, 158);
   color: white;
@@ -110,44 +110,43 @@ nav a{
   max-width: 7em;
 }
 
-#article p{
-  font-size: 100%;
-  text-indent: 1em;
-
-  margin: 1em;
-}
-
-#article h2{
-  font-size: 150%;
-
-  margin: 1em;
-}
-
-#article h3{
-  font-size: 125%;
-
-  margin: 1em;
-}
-
-#article-cards{
-  margin-top: 1em;
-  border: 2px solid rgb(140, 194, 227);
-  border-radius: 8px;
-  width: auto;
-  font-family: Arial Narrow, Arial;
-}
-
 .cards li {
   flex: 1 1 10em;
   padding: 0.5em;
   margin-right: 1em;
   margin-bottom: 1em;
   border-radius: 8px;
-  
   border: 2px solid rgb(98, 135, 158);
   background-color: rgb(208, 208, 232);
 }
 
-.cards li h2{
+.cards li h2 {
   color: rgb(98, 135, 158);
+}
+
+#article-cards {
+  margin-top: 1em;
+  border: 2px solid rgb(140, 194, 227);
+  border-radius: 8px;
+  width: auto;
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+#article p {
+  font-size: 100%;
+  text-indent: 1em;
+
+  margin: 1em;
+}
+
+#article h2 {
+  font-size: 150%;
+
+  margin: 1em;
+}
+
+#article h3 {
+  font-size: 125%;
+
+  margin: 1em;
 }
