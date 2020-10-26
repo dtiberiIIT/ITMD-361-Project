@@ -4,7 +4,7 @@ body {
   background-color: rgb(241, 241, 241);
 }
 
-@media only screen and (min-width: 1px) {
+@media screen and (min-width: 1px) {
   html {
     font-size: 16px;
     line-height: 2em;
@@ -38,14 +38,24 @@ body {
     list-style-type: none;
     margin-left: -1.5em;
 
-    grid-auto-flow: column;
-    grid-template-rows: repeat(1,auto);
+    grid-auto-flow: row;
+    /*grid-template-rows: repeat(1,auto);*/
+  }
+
+  .cards li {
+    flex: 1 1 25em;
+    padding: 0.5em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    border: 2px solid rgb(98, 135, 158);
+    background-color: rgb(208, 208, 232);
   }
 }
 
-@media only screen and (min-width: 480px) {
+@media screen and (min-width: 1000px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5em;
   }
 
@@ -77,6 +87,16 @@ body {
     list-style-type: none;
     margin-left: -1.5em;
   }
+
+  .cards li {
+    flex: 1 1 15em;
+    padding: 0.5em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    border: 2px solid rgb(98, 135, 158);
+    background-color: rgb(208, 208, 232);
+  }
 }
 
 #header {
@@ -104,16 +124,6 @@ nav a {
   border-radius: 4px;
   margin: 1em;
   max-width: 7em;
-}
-
-.cards li {
-  flex: 1 1 10em;
-  padding: 0.5em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  border-radius: 8px;
-  border: 2px solid rgb(98, 135, 158);
-  background-color: rgb(208, 208, 232);
 }
 
 .cards li h2 {
