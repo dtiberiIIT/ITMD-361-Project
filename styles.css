@@ -13,7 +13,7 @@ body {
   #article {
     margin-top: 1em;
     border: 2px solid rgb(140, 194, 227);
-    border-radius: 8px;
+    border-radius: 0.5em;
     width: auto;
 
     font-family: "Arial Narrow", Arial, sans-serif;
@@ -47,7 +47,7 @@ body {
     padding: 0.5em;
     margin-right: 1em;
     margin-bottom: 1em;
-    border-radius: 8px;
+    border-radius: 0.5em;
     border: 2px solid rgb(98, 135, 158);
     background-color: rgb(208, 208, 232);
   }
@@ -62,7 +62,7 @@ body {
   #article {
     margin-top: 1em;
     border: 2px solid rgb(140, 194, 227);
-    border-radius: 8px;
+    border-radius: 0.5em;
     width: 75%;
 
     font-family: "Arial Narrow", Arial, sans-serif;
@@ -93,7 +93,7 @@ body {
     padding: 0.5em;
     margin-right: 1em;
     margin-bottom: 1em;
-    border-radius: 8px;
+    border-radius: 0.5em;
     border: 2px solid rgb(98, 135, 158);
     background-color: rgb(208, 208, 232);
   }
@@ -121,7 +121,7 @@ nav a {
   color: white;
   padding-right: 1em;
   padding-left: 1em;
-  border-radius: 4px;
+  border-radius: 0.3em;
   margin: 1em;
   max-width: 7em;
 }
@@ -133,7 +133,7 @@ nav a {
 #article-cards {
   margin-top: 1em;
   border: 2px solid rgb(140, 194, 227);
-  border-radius: 8px;
+  border-radius: 0.5em;
   width: auto;
   font-family: "Arial Narrow", Arial, sans-serif;
 }
@@ -141,18 +141,25 @@ nav a {
 #article p {
   font-size: 100%;
   text-indent: 1em;
-
   margin: 1em;
 }
 
 #article h2 {
   font-size: 150%;
-
   margin: 1em;
 }
 
 #article h3 {
   font-size: 125%;
-
   margin: 1em;
+}
+
+footer {
+  font-size: 75%;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  margin-top: 5em;
+  background-color: rgb(98, 135, 158);
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
