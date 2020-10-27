@@ -94,6 +94,7 @@ body {
     margin-right: 1em;
     margin-bottom: 1em;
     border-radius: 0.5em;
+    max-width: 20em;
     border: 2px solid rgb(98, 135, 158);
     background-color: rgb(208, 208, 232);
   }
@@ -126,11 +127,29 @@ nav a {
   max-width: 7em;
 }
 
-.cards li h2 {
-  color: rgb(98, 135, 158);
+h3 {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 125%;
+  margin: 1em;
 }
 
-#article-cards {
+article p {
+  font-size: 100%;
+  text-indent: 1em;
+  margin: 1em;
+}
+
+article h2 {
+  font-size: 150%;
+  margin: 1em;
+}
+
+article h3 {
+  font-size: 125%;
+  margin: 1em;
+}
+
+.article-cards {
   margin-top: 1em;
   border: 2px solid rgb(140, 194, 227);
   border-radius: 0.5em;
@@ -138,21 +157,18 @@ nav a {
   font-family: "Arial Narrow", Arial, sans-serif;
 }
 
-#article p {
-  font-size: 100%;
-  text-indent: 1em;
-  margin: 1em;
+.cards li h2 {
+  color: rgb(98, 135, 158);
 }
 
-#article h2 {
-  font-size: 150%;
-  margin: 1em;
+.cards li img {
+  max-width: 15em;
+  max-height: 15em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#article h3 {
-  font-size: 125%;
-  margin: 1em;
-}
 
 footer {
   font-size: 75%;
