@@ -2,11 +2,8 @@ body {
   margin: 1em;
   padding: 1em;
   background-color: rgb(241, 241, 241);
-}
 
-@viewport {
-  width: device-width;
-  zoom:1;
+  font-family: "Arial Narrow", Arial, sans-serif;
 }
 
 @media screen and (min-width: 1px) {
@@ -20,8 +17,6 @@ body {
     border: 2px solid rgb(140, 194, 227);
     border-radius: 0.5em;
     width: auto;
-
-    font-family: "Arial Narrow", Arial, sans-serif;
   }
 
   #article img {
@@ -31,7 +26,6 @@ body {
   #quote {
     font-style: italic;
     font-size: 125%;
-    font-family: "Arial Narrow", Arial, sans-serif;
     color: rgb(98, 135, 158);
     border-bottom: 1px solid rgb(98, 135, 158);
     width: auto;
@@ -69,8 +63,6 @@ body {
     border: 2px solid rgb(140, 194, 227);
     border-radius: 0.5em;
     width: 75%;
-
-    font-family: "Arial Narrow", Arial, sans-serif;
   }
 
   #article img {
@@ -80,7 +72,6 @@ body {
   #quote {
     font-style: italic;
     font-size: 125%;
-    font-family: "Arial Narrow", Arial, sans-serif;
     color: rgb(98, 135, 158);
     border-bottom: 1px solid rgb(98, 135, 158);
     width: 75%;
@@ -112,7 +103,6 @@ header {
   padding: 1em;
   font-size: 100%;
   line-height: 250%;
-  font-family: "Arial Narrow", Arial, sans-serif;
 }
 
 header h1 {
@@ -137,7 +127,6 @@ nav a {
 }
 
 h3 {
-  font-family: "Arial Narrow", Arial, sans-serif;
   font-size: 125%;
   margin: 1em;
 }
@@ -163,7 +152,6 @@ article h3 {
   border: 2px solid rgb(140, 194, 227);
   border-radius: 0.5em;
   width: auto;
-  font-family: "Arial Narrow", Arial, sans-serif;
 }
 
 .cards li h2 {
@@ -181,7 +169,6 @@ article h3 {
 
 footer {
   font-size: 75%;
-  font-family: "Arial Narrow", Arial, sans-serif;
   margin-top: 5em;
   background-color: rgb(98, 135, 158);
   color: white;
