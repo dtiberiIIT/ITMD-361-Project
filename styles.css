@@ -4,6 +4,11 @@ body {
   background-color: rgb(241, 241, 241);
 }
 
+@viewport {
+  width: device-width;
+  zoom:1;
+}
+
 @media screen and (min-width: 1px) {
   html {
     font-size: 16px;
@@ -53,7 +58,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   html {
     font-size: 16px;
     line-height: 1.5em;
@@ -121,7 +126,7 @@ nav {
 }
 
 nav a {
-  flex: 1 1 200px;
+  flex: 1 1 12em;
   background-color: rgb(98, 135, 158);
   color: white;
   padding-right: 1em;
