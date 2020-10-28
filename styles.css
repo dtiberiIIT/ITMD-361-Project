@@ -8,91 +8,91 @@ body {
 
 @media screen and (min-width: 1px) {
   html {
-    font-size: 16px;
-    line-height: 2em;
+  font-size: 16px;
+  line-height: 2em;
   }
 
   #article {
-    margin-top: 1em;
-    border: 2px solid rgb(140, 194, 227);
-    border-radius: 0.5em;
-    width: auto;
+  margin-top: 1em;
+  border: 2px solid rgb(140, 194, 227);
+  border-radius: 0.5em;
+  width: auto;
   }
 
   #article img {
-    width: 100%;
+  width: 100%;
   }
 
   #quote {
-    font-style: italic;
-    font-size: 125%;
-    color: rgb(98, 135, 158);
-    border-bottom: 1px solid rgb(98, 135, 158);
-    width: auto;
+  font-style: italic;
+  font-size: 125%;
+  color: rgb(98, 135, 158);
+  border-bottom: 1px solid rgb(98, 135, 158);
+  width: auto;
   }
 
   .cards {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin-left: -1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: -1.5em;
 
-    grid-auto-flow: row;
-    /*grid-template-rows: repeat(1,auto);*/
+  grid-auto-flow: row;
+  /*grid-template-rows: repeat(1,auto);*/
   }
 
   .cards li {
-    flex: 1 1 25em;
-    padding: 0.5em;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    border-radius: 0.5em;
-    border: 2px solid rgb(98, 135, 158);
-    background-color: rgb(208, 208, 232);
+  flex: 1 1 25em;
+  padding: 0.5em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  border: 2px solid rgb(98, 135, 158);
+  background-color: rgb(208, 208, 232);
   }
 }
 
 @media screen and (min-width: 800px) {
   html {
-    font-size: 16px;
-    line-height: 1.5em;
+  font-size: 16px;
+  line-height: 1.5em;
   }
 
   #article {
-    margin-top: 1em;
-    border: 2px solid rgb(140, 194, 227);
-    border-radius: 0.5em;
-    width: 75%;
+  margin-top: 1em;
+  border: 2px solid rgb(140, 194, 227);
+  border-radius: 0.5em;
+  width: 75%;
   }
 
   #article img {
-    width: 50%;
+  width: 50%;
   }
 
   #quote {
-    font-style: italic;
-    font-size: 125%;
-    color: rgb(98, 135, 158);
-    border-bottom: 1px solid rgb(98, 135, 158);
-    width: 75%;
+  font-style: italic;
+  font-size: 125%;
+  color: rgb(98, 135, 158);
+  border-bottom: 1px solid rgb(98, 135, 158);
+  width: 75%;
   }
 
   .cards {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin-left: -1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: -1.5em;
   }
 
   .cards li {
-    flex: 1 1 15em;
-    padding: 0.5em;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    border-radius: 0.5em;
-    max-width: 20em;
-    border: 2px solid rgb(98, 135, 158);
-    background-color: rgb(208, 208, 232);
+  flex: 1 1 15em;
+  padding: 0.5em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  max-width: 20em;
+  border: 2px solid rgb(98, 135, 158);
+  background-color: rgb(208, 208, 232);
   }
 }
 
