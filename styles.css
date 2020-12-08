@@ -2,36 +2,48 @@ body {
   background-color: rgb(241, 241, 241);
 
   font-family: "Arial Narrow", Arial, sans-serif;
+
+  display: grid;
+  grid-template-rows: 15em 1em 5.5vw 1fr 1em 1fr 1em 0.25fr auto;
+  grid-template-columns: 1.25vw 1.25vw 2.5vw repeat(5, 17vw 1vw) 5vw;
 }
 
 html {
   font-size: 14px;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
-#article {
-  margin-top: 1em;
+article {
   border: 2px solid rgb(140, 194, 227);
   border-radius: 0.5em;
   width: auto;
+
+  padding: 1em;
+
+  grid-row-start: 4;
+  grid-column-start: 2;
+  grid-column-end: span 10;
+}
+
+article h2 {
+  font-size: 150%;
 }
 
 #quote {
   font-style: italic;
   font-size: 125%;
   color: rgb(98, 135, 158);
-  border-bottom: 1px solid rgb(98, 135, 158);
   width: auto;
+
+  grid-column-start: 2;
+  grid-column-end: span 9;
 }
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin-left: -1.5em;
-
-  grid-auto-flow: row;
-  /*grid-template-rows: repeat(1,auto);*/
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-left: -1em; /*Offsets the left side spacing on the first card.*/
 }
 
 .cards li {
@@ -52,8 +64,33 @@ html {
   margin-right: auto;
 }
 
-#article img {
-  width: 100%;
+.cards li h2 {
+  color: rgb(98, 135, 158);
+}
+
+#programming-langs {
+  grid-row-start: 4;
+  grid-row-end: span 1;
+  grid-column-start: 2;
+  grid-column-end: span 10;
+}
+
+#technologies {
+  grid-row-start: 6;
+  grid-row-end: span 1;
+  grid-column-start: 2;
+  grid-column-end: span 10;
+}
+
+#programming-page-desc {
+  grid-row-start: 3;
+  grid-row-end: span 1;
+  grid-column-start: 2;
+  grid-column-end: span 8;
+}
+
+#home-article img {
+  width: 50%;
 }
 
 header {
@@ -62,10 +99,15 @@ header {
   color: rgb(84, 92, 89);
   padding: 1em;
   font-size: 100%;
-  line-height: 250%;
+  line-height: 150%;
+  grid-column-start: 1;
+  grid-column-end: 14;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 header h1 {
+  padding-bottom: 1em;
   border-bottom: 1px solid rgb(98, 135, 158);
 }
 
@@ -73,49 +115,45 @@ nav {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  grid-column-start: 2;
 }
 
 nav a {
   flex: 1 1 12em;
   background-color: rgb(98, 135, 158);
   color: white;
+  padding: 0.1em;
   padding-right: 1em;
   padding-left: 1em;
   border-radius: 0.3em;
-  margin: 1em;
   max-width: 7em;
+  margin-right: 1em;
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+}
+
+#resume-article ul {
+  list-style-type: circle;
 }
 
 h3 {
   font-size: 125%;
-  margin: 1em;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 article p {
   font-size: 100%;
-  text-indent: 1em;
-  margin: 1em;
-}
-
-article h2 {
-  font-size: 150%;
-  margin: 1em;
 }
 
 article h3 {
   font-size: 125%;
-  margin: 1em;
 }
 
-.article-cards {
-  margin-top: 1em;
-  border: 2px solid rgb(140, 194, 227);
-  border-radius: 0.5em;
-  width: auto;
-}
-
-.cards li h2 {
-  color: rgb(98, 135, 158);
+#home-article {
+  text-indent: 1em;
 }
 
 footer {
@@ -125,6 +163,10 @@ footer {
   color: white;
   font-weight: bold;
   text-align: center;
+
+  grid-row: 8;
+  grid-column-start: 1;
+  grid-column-end: 14;
 }
 
 @media screen and (min-width: 250px) {
@@ -137,15 +179,7 @@ footer {
 
   html {
     font-size: 16px;
-    line-height: 2em;
-  }
-
-  .cards li img {
-    max-width: 15em;
-    max-height: 15em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    line-height: 1.5em;
   }
 }
 
@@ -162,48 +196,5 @@ footer {
     line-height: 1.5em;
   }
 
-  #article {
-    margin-top: 1em;
-    border: 2px solid rgb(140, 194, 227);
-    border-radius: 0.5em;
-    width: 75%;
-  }
-
-  #quote {
-    font-style: italic;
-    font-size: 125%;
-    color: rgb(98, 135, 158);
-    border-bottom: 1px solid rgb(98, 135, 158);
-    width: 75%;
-  }
-
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin-left: -1.5em;
-  }
-
-  .cards li {
-    flex: 1 1 15em;
-    padding: 0.5em;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    border-radius: 0.5em;
-    max-width: 20em;
-    border: 2px solid rgb(98, 135, 158);
-    background-color: rgb(208, 208, 232);
-  }
-
-  .cards li img {
-    max-width: 15em;
-    max-height: 15em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #article img {
-    width: 50%;
-  }
 }
 
