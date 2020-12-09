@@ -200,6 +200,18 @@ footer {
     list-style-position: initial;
     padding-left: 1em;
   }
+
+  #technologies {
+    grid-column-start: 2;
+  }
+  
+  #programming-langs {
+    grid-column-start: 2;
+  }
+
+  #quote {
+    grid-column-start: 2;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -239,6 +251,14 @@ footer {
     grid-column-start: 3;
     grid-column-end: 13;
     font-size: 125%;
+  }
+
+  #technologies {
+    grid-column-start: 3;
+  }
+  
+  #programming-langs {
+    grid-column-start: 3;
   }
 }
 
