@@ -1,16 +1,27 @@
 body {
   background-color: rgb(241, 241, 241);
 
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font: 1em, "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
 
   display: grid;
   grid-template-rows: 25% 25% 1em 1fr 1em 1fr 1em 0.25fr auto;
   grid-template-columns: 2vw 2vw repeat(5, 17vw 1vw) 2vw 2vw;
 }
 
-html {
-  font-size: 14px;
-  line-height: 1.5em;
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  font-feature-settings: normal;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 article {
@@ -35,8 +46,8 @@ article h2 {
   color: rgb(98, 135, 158);
   width: auto;
 
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: span 1;
   grid-column-start: 1;
   grid-column-end: span 9;
 }
@@ -73,14 +84,14 @@ article h2 {
 }
 
 #programming-langs {
-  grid-row-start: 4;
+  grid-row-start: 5;
   grid-row-end: span 1;
   grid-column-start: 1;
   grid-column-end: 13;
 }
 
 #technologies {
-  grid-row-start: 6;
+  grid-row-start: 7;
   grid-row-end: span 1;
   grid-column-start: 1;
   grid-column-end: 13;
@@ -89,7 +100,7 @@ article h2 {
 #programming-page-desc {
   grid-row-start: 3;
   grid-row-end: span 1;
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: span 8;
 }
 
@@ -132,7 +143,6 @@ nav a {
   border-radius: 0.3em;
   max-width: 7em;
   margin-right: 1em;
-  margin-top: 0.5em;
 }
 
 ul {
@@ -188,6 +198,26 @@ footer {
     line-height: 1.5em;
   }
 
+  header {
+    grid-column-start: 2;
+  }
+
+  #quote {
+    grid-column-start: 2;
+  }
+
+  #programming-langs {
+    grid-column-start: 2;
+  }
+
+  #technologies {
+    grid-column-start: 2;
+  }
+
+  article {
+    grid-column-start: 2;
+  }
+
   #home-article img {
     width: 100%;
   }
@@ -218,7 +248,7 @@ footer {
   body {
     background-color: rgb(241, 241, 241);
     font-family: "Arial Narrow", Arial, sans-serif;
-    grid-template-rows: 15em 1em 5em 1fr 1em 1fr 1em 0.25fr auto;
+    grid-template-rows: 15em 3em 1em 5em 1fr 1em 1fr 1em 0.25fr auto;
   }
 
   html {
@@ -230,11 +260,11 @@ footer {
     grid-column-start: 2;
     grid-column-end: 14;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 3;
   }
 
   article {
-    grid-row-start: 4;
+    grid-row-start: 5;
     grid-column-start: 3;
     grid-column-end: 10;
   }
