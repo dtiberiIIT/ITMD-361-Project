@@ -13,6 +13,10 @@ html {
   line-height: 1.5em;
 }
 
+#date-greeting {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+}
+
 article {
   border: 2px solid rgb(140, 194, 227);
   border-radius: 0.5em;
@@ -199,6 +203,18 @@ footer {
   #resume-article ul {
     list-style-position: initial;
     padding-left: 1em;
+  }
+
+  #programming-langs {
+    grid-column-start: 3;
+  }
+  
+  #technologies {
+    grid-column-start: 3;
+  }
+
+  #quote {
+    grid-column-start: 3;
   }
 }
 
